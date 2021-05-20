@@ -41,22 +41,17 @@ html{
 }
 .gallery {
   display: flex;
-  flex-wrap: wrap;
-  padding: 4% 2%;
-  box-sizing: border-box;
-}
-.im {
-  transform: scale(0.3, 0.3);
--ms-transform: scale(0.3, 0.3);
--webkit-transform: scale(0.3, 0.3);
 
 }
-.col {
-  flex: 30%;
-  overflow: hidden;
-  margin: 0 2%;
-  line-height: 0;
+  .col {
+    flex: 33%;
+  }
+.im {
+  padding:0;
+  width: 200px;
+  height: 200px;
 }
+
 @media only screen and (max-width: 600px) {
   :root{
     --fs-h1: 2.8em;
