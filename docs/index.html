@@ -9,6 +9,8 @@
         <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="crossorigin="anonymous"/>
+        <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Indie+Flower">
         <link rel="stylesheet" href ="style.css">
         <link rel="icon" href="http://www.erinyan.dev/favicon.png">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -18,98 +20,39 @@
     </head>
     <body>
         <header>
-          <div id="rectangle"></div>
-          <h1 class="title">ERIN YAN</h1>
-
-          <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'About')" id="open">About Me</button>
-            <button class="tablinks" onclick="location.href='https://docs.google.com/document/d/192JUje9V-a2A882LXZ-JFHCRphjB9694P8M7q-uyHpc/edit?usp=sharing'" target="button" >Resume</button>
-            <button class="tablinks"  onclick="openCity(event, 'Projects')">Projects</button>
-          </div>
-          
-          <script>
-          function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-              tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-              tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-          }
-          
-          // Get the element with id="defaultOpen" and click on it
-          document.getElementById("open").click();
-          </script>
+        <h1 class="title">Erin Yan</h1>
         </header>
-
-
-          <div id="Projects" class="tabcontent portfolio" style="display:none"> 
-            <div class="title">
-              <h1 class="title">Projects</h1>
-              <h2>All the stuff that I built these past years!</h2>
+        <div class="row">
+          <div class="column1">
+            <p>About Me</p>
+            <div class="abMe">
+              <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                <li> Curabitur quis lorem id diam efficitur venenatis in ac sem/li>
+                <li>Cras venenatis dui mi, placerat vulputate leo ultricies nec</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                <li> Curabitur quis lorem id diam efficitur venenatis in ac sem/li>
+                <li>Cras venenatis dui mi, placerat vulputate leo ultricies nec</li>
+              </ul>
             </div>
-            <div class="masonry">
-              <div class="item">
-                Defense Witches
-                <img src="DefenseW.jpg">
-                Tower defense game made with python
-              </div>
-              <div class="item">
-                Spirit Bomb
-                <img src="Bomberman.jpg">
-                Bomberman remix game made with JS
-              </div>
-              <div class="item">
-                3D Printer
-                <img src="printer.jpg">
-                3D printer created in 2 weeks at MIT
-              </div>
-              <div class="item">
-                Dr Mend
-                <img src="DrMend.jpg">
-                A medical diagnosis website
-              </div>
-              <div class="item">
-                ArduinoFlake
-                <img src="snowflake.jpg">
-                LED snowflake controlled by arduino. 
-              </div>
-              <div class="item">
-                Handwriting Recognizer
-                <img src="MlLab.png">
-                Recognizes numbers 0-9 using tensorflow
-              </div>
           </div>
-        </div> 
-        <div id="About" class="tabcontent aboutme"> 
-          <div class="title">
-            <h1 class="title">About Me</h1>
-            <h2 >Woah! A whole page about me?</h2>
+          <div class="column2">
+            <p>Portfolio</p>
+            <div class="gallery"> 
+                <div class="col">
+                  <img class="im" src="Color and BW\Post-It with Tape - blue.png">
+                  <img class="im" src="Color and BW\Post-It with Tape - yellow.png">
+                </div>
+                <div class="col">
+                  <img class="im" src="Color and BW\Post-It with Tape - green.png">
+                    <img class="im" src="Color and BW\Post-It with Tape - blue.png">
+                    </div>
+                   <div class="col">
+                    <img class="im" src="Color and BW\Post-It with Tape - yellow.png">
+                    <img class="im" src="Color and BW\Post-It with Tape - green.png">
+              </div>
+            </div>
           </div>
-          <img class="picture" src="FullSizeRender.jpeg">
-          <p class="aboutmeparagraph">
-            Hey, I'm Erin, a freshman pursuing a BS in Electrical and Computer Engineering at Carnegie Mellon University. I'm a chaotic-good learner, an aspiring gadget creator, and most importantly a curious discoverer 🗺️. 
-            <br /><br />I'm currently working as a frontend developer at <a href="https://berri.io/#/">Berri.io</a>, a website that helps college students cultivate fruity friendships 🍋 anonymously! Previously I interned at Google CSSI and used JavaScript to create a Bomberman game. I also interned at MIT Beaverworks, creating a 3D printer and a filament recycling machine. 
-	          <br /><br />In my free time, I like to create resin art, watch comedy TV shows, and convince my cat to like me (it’s not going so well 😾). Feel free to reach out to me and I hope to meet you soon!
-          </p>
         </div>
-          <div class="foot">
-          <a href="mailto:erinyan@andrew.cmu.edu">
-          <i class="fas fa-envelope footerEl">
-            <span class="iconLabel">erinyan@andrew.cmu.edu</i></span>
-        </a>
-        <a href="https://github.com/glowyRectangle">
-          <i class="fab fa-github footerEl" > <span class="iconLabel">glowyRectangle </span></i>
-        </a> 
-        <a href="https://www.linkedin.com/in/erin-yan-386412168/">
-          <i class="fab fa-linkedin footerEl"></i>
-        </a>
-        </div>
-        <div class="foot">made from scratch by me!</div>
-    </body>
+      </body>
 </html>
