@@ -48,8 +48,10 @@ html{
   }
 .im {
   padding:0;
-  width:  60%;
+  width:  65%;
   height: auto;
+  -webkit-filter: drop-shadow(5px 5px 5px rgb(85, 84, 84));
+  filter: drop-shadow(5px 5px 5px rgb(85, 84, 84));
 }
 
 @media only screen and (max-width: 600px) {
