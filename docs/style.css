@@ -47,17 +47,31 @@ html{
     flex: 33%;
   }
 .im {
+  position: relative;
   padding:0;
-  width:  65%;
+  width:  75%;
   height: auto;
-  -webkit-filter: drop-shadow(5px 5px 5px rgb(85, 84, 84));
-  filter: drop-shadow(5px 5px 5px rgb(85, 84, 84));
+  -webkit-filter: drop-shadow(5px 5px 5px rgb(128, 126, 126));
+  filter: drop-shadow(5px 5px 5px rgb(134, 129, 129));
 }
 .im:hover {
   animation: shakeX;
 }
+.item{
+  position: relative;
+  background: primary;
+  overflow: hidden;
+}
+.caption{
+  position: absolute;
+  text-align: center;
+  width: 70%;
+    padding: 1em 0;
+  top:20%;
+  right:15%;
+  font: var(--fs-body) var(--ff-primary);
 
-
+}
 @keyframes shakeX {
   from,
   to {
