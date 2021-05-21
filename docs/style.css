@@ -54,13 +54,16 @@ html{
   -webkit-filter: drop-shadow(5px 5px 5px rgb(128, 126, 126));
   filter: drop-shadow(5px 5px 5px rgb(134, 129, 129));
 }
-.im:hover {
-  animation: shakeX;
-}
+
 .item{
   position: relative;
   background: primary;
   overflow: hidden;
+}
+.item:hover{
+  -webkit-transform: rotate3d(1,0,0.1,20deg);
+  -moz-transform: rotate3d(1,0,0.1,20deg);
+  transform: rotate3d(1,0,0.1,20deg);
 }
 .caption{
   position: absolute;
@@ -71,30 +74,6 @@ html{
   right:15%;
   font: var(--fs-body) var(--ff-primary);
 
-}
-@keyframes shakeX {
-  from,
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-  }
 }
 
 @media only screen and (max-width: 600px) {
