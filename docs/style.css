@@ -13,6 +13,12 @@
 html{
   height: 100%;
 }
+canvas{
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:-1;
+}
 .title {
   text-align: left;
   font: var(--fs-h1) var(--ff-primary);
@@ -70,11 +76,45 @@ html{
   text-align: center;
   width: 70%;
     padding: 1em 0;
-  top:20%;
+  top:15%;
   right:15%;
   font: var(--fs-body) var(--ff-primary);
 
 }
+.controls {
+	min-height: 60px;
+	margin: 0 auto;
+	width: 600px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.coloritem {
+	list-style:none;
+	margin: 0;
+	padding: 10px 0 20px;
+	width: 100%;
+	text-align: center;
+  display: inline-block;
+	margin: 0 5px 10px;
+}
+.red {
+	background: #E74C3C;
+}
+
+.blue {
+	background: #3498DB;
+}
+
+.yellow {
+	background: #F1C40F;
+}
+
+.selected {
+	border: 7px solid #68B25B;
+	width: 40px;
+	height: 40px;
+}
+
 
 @media only screen and (max-width: 600px) {
   :root{
