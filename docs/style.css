@@ -120,13 +120,17 @@ a {
 
 .projectRole{
   font: var(--fs-body) var(--ff-primary);
-  padding-left: 5%;
+  line-height: 1.2rem;
+  padding-bottom:1%;
+  text-align: center;
 }
 .projectDescription{
   padding-right:20%;
   padding-left:20%;
   font: var(--fs-h3) var(--ff-primary);
+  padding-bottom:1%;
   text-align: center;
+  line-height: 1.2rem;
 }
 .projectIm{
   display: block;
