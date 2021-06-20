@@ -16,7 +16,7 @@
   <body>
 	  <header>
 	  	<h1>Erin Yan</h1>
-	  	<h2>About</h2>
+	  	<h2 ><a href ="about.html">About</a></h2>
 	  </header>
 	  <main>
 		<div class="projectTimeline">
@@ -29,24 +29,24 @@
 
 				<li class='projectItem' id="1">
 					<div class = "projectNum">01</div>
-					<div class = "projectName">Project 1</div>
+					<div class = "projectName">Berri.io</div>
 					<div class = "projectRole">Frontend developer</div>
 				</li>
 				<li class='projectItem' id="2">
 					<div class = "projectNum">02</div>
-					<div class = "projectName">Project 2</div>
-					<div class = "projectRole">Frontend developer</div>
+					<div class = "projectName">Fairness in Optimal Transport</div>
+					<div class = "projectRole">Student researcher</div>
 				</li>
 				<li class='last projectItem' id="3">
 					<div class = "projectNum">03</div>
-					<div class = "projectName">Project 3</div>
-					<div class = "projectRole">Frontend developer</div>
+					<div class = "projectName">Autonomy in Microreactors</div>
+					<div class = "projectRole">Student researcher</div>
 				</li>
 
 				<li class='projectItem 'id="4">
 					<div class = "projectNum">04</div>
-					<div class = "projectName">Project 4</div>
-					<div class = "projectRole">Frontend developer</div>
+					<div class = "projectName">Spirit Bomb</div>
+					<div class = "projectRole">Backend developer</div>
 				</li>
 				<li class='projectItem' id="5">
 					<div class = "projectNum">05</div>
@@ -59,15 +59,28 @@
 					<div class = "projectRole">Frontend developer</div>
 				</li>
 			</ul>
+
+			<div class="gallery">
+				<div class="p1gallery">
+					<img class ="galImg3" src= "berriss2.PNG">
+					<img class ="galImg3" src= "berriss3.PNG">
+					<img class="galImg1" src="berriss.png">
+				</div>
+				<div class="p2gallery"> 
+					<img class ="galImg1" src="explorecsr.png">
+					<img class="'galImg3" src="explorecsr3.png">
+					<img class="'galImg2" src="explorecsr2.png">
+
+				</div>
+			</div>
+
 			<script type="text/javascript">
 				let test = document.getElementsByClassName("projectItem");
 				console.log(test);
 				for (var i = 0; i < test.length; i++) {
 					test[i].addEventListener("mouseenter", function( event ) {
-
         				event.target.style.color = "#63262E";
 					const numofproject= Number(event.target.id);
-
 					setTimeout(function() {
     					event.target.style.color = "";
   					}, 1000);
@@ -75,6 +88,20 @@
         				document.getElementById("scroll-progress-bar").style.width = (numofproject/6)*100 + "%";
 			
     					}, false);
+
+					test[i].addEventListener("mouseover", function( event ) {
+					let gal= document.getElementsByClassName("p"+event.target.id+"gallery")
+					console.log(gal)
+					gal[0].style.display ="block";
+
+					},false);
+					
+					test[i].addEventListener("mouseleave", function(event){
+						let gal= document.getElementsByClassName("p"+event.target.id+"gallery")
+						gal[0].style.display ="none";
+
+
+					},false)
 				}
 			</script>
 
