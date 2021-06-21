@@ -7,8 +7,11 @@
 
     <!-- Bootstrap CSS -->
     <link href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href ="style.css">
     <link rel="icon" href="http://www.erinyan.dev/favicon.png">
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href ="style.css">
 
     <title>Erin's Portfolio!</title>
@@ -79,7 +82,6 @@
 				console.log(test);
 				for (var i = 0; i < test.length; i++) {
 					test[i].addEventListener("mouseenter", function( event ) {
-        				event.target.style.color = "#63262E";
 					const numofproject= Number(event.target.id);
 					setTimeout(function() {
     					event.target.style.color = "";
@@ -104,11 +106,7 @@
 					},false)
 				}
 			</script>
-
 		</div>
 	  </main>
-
-
-   
   </body>
 </html>

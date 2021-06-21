@@ -31,7 +31,7 @@ ul{
 }
 
 h1{
-	font-size:1.4rem;
+	font-size:1.2rem;
 	font-weight: normal;
 }
 .greeting{
@@ -49,82 +49,79 @@ i{
 p{
 	font-size:1.2rem;
 }
-body {margin: 0; height: 100%; overflow: hidden}
+body {
+	margin: 0; 
+	height: 100%; 
+	overflow: hidden}
 .vertical-scroll-progress-container {	
 	margin-top:16rem;
-  	width: 31rem;
+  	width: 28rem;
   	height: 2px;
   	background:var(--fontColorHighlight);
   	transform: rotate(90deg);
 	position:fixed; 
-	left:-12rem;
+	left:-9rem;
 }
 .scroll-progress-bar {
-  height: 2px;
-  background: var(--fontColorSecondary);
-  width: 0%;
-  transition: all 0.7s;
+	height: 2px;
+	background: var(--fontColorSecondary);
+	width: 0%;
 }
 .projectTimeline{
-	display:flex;
-	margin-top:0;
-	padding-top:0;
+	display:flex
 }
 .projectList{
 	display:flex;
 	width:60%;
-	flex-direction:column;
-	margin-top:0;
-	padding-top:0;
-}
-.projectItem{
+	 flex-direction:column;
 	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
-	 color: var(--fontColovar);
   	background-image: linear-gradient(
     	to right,
-	    var(--fontColorSecondary),
+	    var(--fontColorPrimary),
 	    var(--fontColorSecondary) 50%,
 	    var(--fontColorPrimary) 50%);
 	    background-size: 200% 100%;
 	    background-position: 100%;
-	margin-bottom:3.3rem;
+}
+
+.projectList:hover {
+	transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
+	background-position: 0%;
+}
+
+.projectItem{
+	margin-bottom:3.4rem;
 }
 .projectNum{
 	font-size:0.6rem;
-	padding-bottom:.5rem;
 }
 .projectName{
 	padding-left:1rem;
 	display:inline;
-	font-size:1.3rem;
-	margin-top:0;
-	padding-top:0;
-
+	font-size:1.3rem
 }
 .projectRole{
 	display:inline;
 	font-size:0.7rem
 }
-.projectList .projectItem:hover{
-	transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
-  	background-position: 0%;
+.projectList :hover{
 	text-shadow: 2px 2px 5px var(--fontColorHighlight);
 }
 .gallery {
-  columns: 2 20rem;
-  column-gap: 1.5rem;
-  width: 90%;
-  margin: 0 auto;
-  margin-right:3rem;
+	columns: 2 20rem;
+	column-gap: 1.5rem;
+	width: 90%;
+	margin: 0 auto;
+	margin-right:3rem;
 }
 .p1gallery, .p2gallery{
-    width: 150px;
-    margin: 0 1.5rem 1.5rem 0;
-    display: none;
-    width: 100%;
-    border-radius: 5px;
-    transition: all .25s ease-in-out;
+	width: 150px;
+	margin: 0 1.5rem 1.5rem 0;
+	display: none;
+	width: 100%;
+	border-radius: 5px;
+	transition: all .25s ease-in-out;
     }
     img {
 	
