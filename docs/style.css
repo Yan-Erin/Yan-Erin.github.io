@@ -140,6 +140,9 @@ body {margin: 0; height: 100%; overflow: hidden}
 }
 .decription{
 	line-height: 1.6em;
+	display:block;
+	padding-top:20%;
+
 }
 .page{
 	padding-right:1rem;
