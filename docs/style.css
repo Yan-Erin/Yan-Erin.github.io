@@ -135,7 +135,7 @@ body {margin: 0; height: 100%; overflow: hidden}
     }
 .about{
 	width:70%;
-	padding-right:7rem;
+	padding-left:7rem;
 
 }
 .decription{
@@ -145,15 +145,13 @@ body {margin: 0; height: 100%; overflow: hidden}
 
 }
 .page{
-	padding-right:1rem;
-	padding-left:1rem;
+	padding-right:5rem;
+	padding-left:5rem;
 	display:flex;
 	
 }
 .aboutMePic{
-
 	width:70%;
-	padding-left:15rem;
 }
 .image{
 
@@ -181,6 +179,71 @@ a:hover {
 a{
 	transition: all 0.5s;
 }
-.description{
-	width:60%;
+
+
+@media only screen and (max-width: 600px) {
+body{
+	padding:0rem;
+	padding-right:1rem;
+	padding-left:1rem;
+	overflow: scroll;
+}
+  .page{
+	display:block;
+	padding-right:0rem;
+	padding-left:0rem;
+}
+.about{
+	width:100%;
+	padding-right:0rem;
+	padding-left:0rem;
+
+}
+
+.aboutMePic{
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
+}
+.image{
+	display: block;
+	width:50%;
+	border-radius:130px;
+	margin-left: auto;
+  	margin-right: auto;
+}
+li{
+	font-size:0.8rem;
+}
+h1{
+	font-size:1.2rem;
+	font-weight: normal;
+}
+
+h2{
+	font-size:1rem;
+	font-weight: normal;
+	margin-right:0rem
+}
+.greeting, p{
+	text-align:center;
+}
+.b{
+	padding-left:0rem;
+	padding-right:0rem;
+
+}
+.icons{
+	width: 50%;
+	display:block;
+	margin-left: auto;
+  	margin-right: auto;
+
+
+}
+i{
+	padding:0.4rem
+}
+
 }
