@@ -138,9 +138,8 @@ body {margin: 0; height: 100%; overflow: hidden}
 	padding-right:7rem;
 
 }
-.description{
-	line-height: 3.4em;
-	justify-content: space-between;
+.decription{
+	line-height: 1.6em;
 }
 .page{
 	padding-right:1rem;
