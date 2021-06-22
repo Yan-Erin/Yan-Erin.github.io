@@ -171,3 +171,7 @@ a:visited {
 a:hover {
   color: var(--fontColorSecondary);
 }
+
+a{
+	transition: all 0.5s;
+}
