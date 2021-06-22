@@ -3,6 +3,7 @@
 	--fontColorPrimary: #463F3A;
 	--fontColorHighlight: #BCB8B1;
 	--fontColorSecondary: #63262E;
+	--fontColorSecondary2: #762D37;
 	--font: "Montserrat"
 }
 body{
@@ -78,16 +79,18 @@ body {margin: 0; height: 100%; overflow: hidden}
 	padding-top:0;
 }
 .projectItem{
-	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
-	 color: var(--fontColovar);
-  	background-image: linear-gradient(
-    	to right,
-	    var(--fontColorSecondary),
-	    var(--fontColorSecondary) 50%,
-	    var(--fontColorPrimary) 50%);
-	    background-size: 200% 100%;
-	    background-position: 100%;
+	position: relative;
+
+  	color: var(--fontColorPrimary);
+ 	 overflow: hidden;
+ 	 background: linear-gradient(to right, var(--fontColorSecondary2),var(--fontColorSecondary2) 50%, var(--fontColorPrimary) 50%);
+ 	 background-clip: text;
+  	-webkit-background-clip: text;
+ 	 -webkit-text-fill-color: transparent;
+ 	 background-size: 200% 100%;
+  	background-position: 100%;
+  	transition: background-position 1.5s ease;
+  	text-decoration: none;
 	margin-bottom:3.3rem;
 }
 .projectNum{
@@ -106,10 +109,8 @@ body {margin: 0; height: 100%; overflow: hidden}
 	display:inline;
 	font-size:0.7rem
 }
-.projectList .projectItem:hover{
-	transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
-  	background-position: 0%;
-	text-shadow: 2px 2px 5px var(--fontColorHighlight);
+.projectItem:hover{
+	background-position: 0 100%;
 }
 .gallery {
   columns: 2 20rem;

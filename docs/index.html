@@ -18,11 +18,11 @@
   </head>
   <body>
 	  <header>
-	  	<h1>Erin Yan</h1>
-	  	<h2 ><a href ="about.html">About</a></h2>
+	  	<h1 class= "animate__animated animate__fadeIn animate__slower">Erin Yan</h1>
+	  	<h2 class ="animate__animated animate__fadeIn animate__slower" ><a href ="about.html">About</a></h2>
 	  </header>
 	  <main>
-		<div class="projectTimeline">
+		<div class="projectTimeline animate__animated animate__fadeIn animate__slower">
 
 			<div class="vertical-scroll-progress-container">
 				<div class="scroll-progress-bar" id="scroll-progress-bar"></div>
@@ -32,34 +32,34 @@
 
 				<li class='projectItem' id="1">
 					<div class = "projectNum">01</div>
-					<div class = "projectName">Berri.io</div>
-					<div class = "projectRole">Frontend developer</div>
+					<span class = "projectName">Berri.io</span>
+					<span class = "projectRole">Frontend developer</span>
 				</li>
 				<li class='projectItem' id="2">
 					<div class = "projectNum">02</div>
-					<div class = "projectName">Fairness in Optimal Transport</div>
-					<div class = "projectRole">Student researcher</div>
+					<span class = "projectName">Fairness in Optimal Transport</span>
+					<span class = "projectRole">Student researcher</span>
 				</li>
 				<li class='last projectItem' id="3">
 					<div class = "projectNum">03</div>
-					<div class = "projectName">Autonomy in Microreactors</div>
-					<div class = "projectRole">Student researcher</div>
+					<span class = "projectName">Autonomy in Microreactors</span>
+					<span class = "projectRole">Student researcher</span>
 				</li>
 
 				<li class='projectItem 'id="4">
 					<div class = "projectNum">04</div>
-					<div class = "projectName">Spirit Bomb</div>
-					<div class = "projectRole">Backend developer</div>
+					<span class = "projectName">Spirit Bomb</span>
+					<span class = "projectRole">Backend developer</span>
 				</li>
 				<li class='projectItem' id="5">
 					<div class = "projectNum">05</div>
-					<div class = "projectName">Project 5</div>
-					<div class = "projectRole">Frontend developer</div>
+					<span class = "projectName">Project 5</span>
+					<span class = "projectRole">Frontend developer</span>
 				</li>
 				<li class='projectItem' id="6">
 					<div class = "projectNum">06</div>
-					<div class = "projectName">Project 6</div>
-					<div class = "projectRole">Frontend developer</div>
+					<span class = "projectName">Project 6</span>
+					<span class = "projectRole">Frontend developer</span>
 				</li>
 			</ul>
 
@@ -91,7 +91,7 @@
 			
     					}, false);
 
-					test[i].addEventListener("mouseover", function( event ) {
+					test[i].addEventListener("mouseenter", function( event ) {
 					let gal= document.getElementsByClassName("p"+event.target.id+"gallery")
 					console.log(gal)
 					gal[0].style.display ="block";
