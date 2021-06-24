@@ -68,7 +68,7 @@ body {margin: 0; height: 100%; overflow: hidden}
   	background:var(--fontColorHighlight);
   	transform: rotate(90deg);
 	position:fixed; 
-	left:-12rem;
+	left:-10rem;
 }
 .scroll-progress-bar {
   height: 2px;
@@ -102,6 +102,7 @@ body {margin: 0; height: 100%; overflow: hidden}
   	transition: background-position 1.5s ease;
   	text-decoration: none;
 	margin-bottom:3.3rem;
+	margin-left:1rem;
 }
 .projectNum{
 	font-size:0.6rem;
