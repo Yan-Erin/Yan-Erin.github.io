@@ -34,6 +34,15 @@ ul{
 h1{
 	font-size:1.4rem;
 	font-weight: normal;
+	display:flex;
+}
+.logo{
+	width:25%;
+	height: 70%;
+	display:flex
+}
+.namestuff{
+	display:flex;
 }
 .greeting{
 	font-size:1.5rem;
