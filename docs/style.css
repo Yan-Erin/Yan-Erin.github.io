@@ -116,12 +116,14 @@ body {margin: 0; height: 100%; overflow: hidden}
 	padding-top:0;
 
 }
+
 .projectRole{
 	display:inline;
 	font-size:0.7rem
 }
 .projectItem:hover{
 	background-position: 0 100%;
+	cursor:default;
 }
 .gallery {
   columns: 2 20rem;
