@@ -279,11 +279,13 @@ i{
 .projectNum{
 	font-size:0.6rem;
 	padding-bottom:.5rem;
-	display:inline
+	display:block
 }
 .projectName{
 	font-size:1rem;
-	display:inline
+	text-align:center;
+	margin-left:0rem;
+	padding-left:0rem;
 
 }
 .decription{
@@ -293,12 +295,16 @@ i{
 	font-size:0.8rem;
 }
 
+.projectRole{
+	display:block;
+	font-size:0.7rem
+}
 .gallery {
   columns: 2 20rem;
   column-gap: 1.5rem;
   width: 100%;
   margin: 0 auto;
-  margin-left:0.5rem;
+  margin-left:1rem;
   transition: all .7s ease-in-out;
 }
 
