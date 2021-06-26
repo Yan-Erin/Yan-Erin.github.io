@@ -67,6 +67,7 @@ p{
 	font-size:1.2rem;
 }
 body {margin: 0; height: 100%; overflow: hidden}
+
 .vertical-scroll-progress-container {	
 	margin-top:16rem;
   	width: 31rem;
@@ -265,6 +266,40 @@ i{
 	margin:0.31em;
 	padding-right:0rem;
 }
+.vertical-scroll-progress-container {	
 
+  	width: 80vh;
+  	height: 2px;
+  	background:var(--fontColorHighlight);
+  	transform: rotate(90deg);
+	position:fixed; 
+	left: -35vh;
+	top: 15vh;
+}
+.projectNum{
+	font-size:0.6rem;
+	padding-bottom:.5rem;
+	display:inline
+}
+.projectName{
+	font-size:1rem;
+	display:inline
+
+}
+.decription{
+	line-height: 1rem;
+	display:block;
+	padding-top:5%;	
+	font-size:0.8rem;
+}
+
+.gallery {
+  columns: 2 20rem;
+  column-gap: 1.5rem;
+  width: 100%;
+  margin: 0 auto;
+  margin-left:0.5rem;
+  transition: all .7s ease-in-out;
+}
 
 }
