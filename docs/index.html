@@ -105,7 +105,11 @@
 					<span class="decription">Have you taken 15-122? Do you wonder who would win if Professor Kosbie and Professor Taylor fought? Well my hack 112 group couldn't decide so we created a multiplayer game that can help you figure it out!
 					</span>
 				</div>
-				
+				<div class="secret_div">
+					<img class ="galImg1" src="src/cringy.png">
+				</div>
+					
+					
 			</div>
 
 			<script type="text/javascript">
@@ -136,6 +140,25 @@
 
 					},false)
 				}
+
+				const secretDiv = document.querySelector('.secret_div')
+
+				const keys = []
+				const secretCode = ['c','h','p']
+
+
+				function keysDetector(e) {
+				console.log(e.key)
+				keys.push(e.key)
+				if (keys.length > secretCode.length) {
+				keys.shift()
+				}
+				if (JSON.stringify(keys)=== JSON.stringify(secretCode)){
+				secretDiv.style.display= "block"
+				}
+				}
+				window.addEventListener('keyup', keysDetector);
+
 			</script>
 		</div>
 	  </main>

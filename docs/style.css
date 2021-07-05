@@ -22,33 +22,35 @@ header{
 .port{
 	padding-right:3rem;
 }
-
+.secret_div{
+	display:none;
+}
 ul{
-	list-style-type: none;
+list-style-type: none;
 }
 .abMeList{
-	list-style-type:square;
+list-style-type:square;
 
 }
 .b{
-	padding:1rem;
+padding:1rem;
 }
 
 h1{
-	font-size:1.4rem;
-	font-weight: normal;
-	display:flex;
+font-size:1.4rem;
+font-weight: normal;
+display:flex;
 }
 .logo{
-	width:25%;
-	height: 70%;
-	display:flex
+width:25%;
+height: 70%;
+display:flex
 }
 .namestuff{
-	display:flex;
+display:flex;
 }
 .greeting{
-	font-size:1.5rem;
+font-size:1.5rem;
 
 }
 .nav{
