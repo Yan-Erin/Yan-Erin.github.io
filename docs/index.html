@@ -1,166 +1,142 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html>
+	<title>Erin Yan Site!</title>
+	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<script src="https://kit.fontawesome.com/20331a6fb0.js" crossorigin="anonymous"></script>
+    	<link rel="icon" href="http://www.erinyan.dev/favicon.png">
+    	<link rel="stylesheet" href ="style.css">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-    <!-- Bootstrap CSS -->
-    <link href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="icon" href="http://www.erinyan.dev/favicon.png">
-     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    <link rel="stylesheet" href ="style.css">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-    <title>Erin's Portfolio!</title>
-  </head>
-  <body>
-	  <header>
-		<span class= "namestuff animate__animated animate__fadeIn animate__slower"> <img  class= " animate__animated animate__jello animate__delay-1s logo" src= favicon.png>
-	  	<h1 >Erin Yan</h1></span>
-		  <span class="nav">
-		 <h2 class= "port animate__animated animate__fadeIn animate__slower" style="text-decoration:underline"><a href ="index.html">Portfolio</a></h2>
-		 <h2 class ="animate__animated animate__fadeIn animate__slower" ><a href ="about.html">About</a></h2></span>
-	  </header>
-	  <main>
-		<div class="projectTimeline animate__animated animate__fadeIn animate__slower">
-
-			<div class="vertical-scroll-progress-container">
-				<div class="scroll-progress-bar" id="scroll-progress-bar"></div>
-			</div>
-		
-			<ul class="projectList">
-
-				<li class='projectItem' id="1">
-					<div class = "projectNum">01</div>
-					<span class = "projectName">Berri.io</span>
-					<span class = "projectRole">Frontend developer</span>
-				</li>
-				<li class='projectItem' id="2">
-					<div class = "projectNum">02</div>
-					<span class = "projectName">Fairness in Optimal Transport</span>
-					<span class = "projectRole">Student researcher</span>
-				</li>
-				<li class='last projectItem' id="3">
-					<div class = "projectNum">03</div>
-					<span class = "projectName">Autonomy in Microreactors</span>
-					<span class = "projectRole">Student researcher</span>
-				</li>
-
-				<li class='projectItem 'id="4">
-					<div class = "projectNum">04</div>
-					<span class = "projectName">Spirit Bomb</span>
-					<span class = "projectRole">Game developer</span>
-				</li>
-				<li class='projectItem' id="5">
-					<div class = "projectNum">05</div>
-					<span class = "projectName">3D Printer Filament Recycler</span>
-					<span class = "projectRole">Summer Program Project</span>
-				</li>
-				<li class='projectItem' id="6">
-					<div class = "projectNum">06</div>
-					<span class = "projectName">Hack 112</span>
-					<span class = "projectRole">Game developer</span>
-				</li>
-			</ul>
-
-			<div class="gallery">
-				<div class="p1gallery">
-					<img class ="galImg3" src= "src/baboutus.png">
-					<img class ="galImg3" src= "src/berripatch.png">
-					<span class="decription">Berri was founded during the COVID 19 pandemic as a way to help college students meet each other.
-						 Make your own fruit avatar and swipe right to match with others! <br> <br>
-						I worked on the About Us page as well as the blog page and did some front end styling for the app.
-</span>
-				</div>
-				<div class="p2gallery"> 
-					<img class ="galImg1" src="src/casestudy.png">
-					<img class="'galImg3" src="src/explorecsr.png">
-					<span class="decription">Optimal transport entails finding the most efficient way to allocate a limited amount of resources. However, the most efficient transport plan may not always lead to a fair allocation of resources.
-						 <br> <br>In this research project with Google Research, my group and I incorporated a fairness factor into the optimal transport plan.
-						 Using the alternating method of multipliers, we developed a distributed algorithm that negotiates solutions based on each pair of source and target without a need for a central planner. The algorithm yields fair and efficient results which are analyzed through our case studies.
-					</span>
-				</div>
-				<div class="p4gallery"> 
-					<img class ="galImg1" src="src/bombss.png">
-					<img class="'galImg3" src="src/bombss3.png">
-					<span class="decription">Bomberman has been a childhood game for both my partner and I so we decided to recreate this game as our Google CSSI project.<br><br> Impersonate a cute flame character and get ready to start bombing! Don't forget to collect powerups and increase your 
-					</span>
-				</div>
-				<div class="p5gallery"> 
-					<img class ="galImg1" src="src/drill.jpg">
-					<img class="'galImg3" src="src/project.png">
-					<span class="decription">Plastic waste when 3D printing is a big issue due to the amount of plastic wasted on failed prints and support materials.<br> <br> My project with my group at MIT BWSI attempted
-						to tackle this issue by creating a gadget that can melt waste PLA and recreate it into recycled filament.  
-					</span>
-				</div>
-				<div class="p6gallery"> 
-					<img class ="galImg1" src="src/splashScreen.jpg">
-					<img class="'galImg3" src="src/instructionsScreen.jpg">
-					<span class="decription">Have you taken 15-122? Do you wonder who would win if Professor Kosbie and Professor Taylor fought? Well my hack 112 group couldn't decide so we created a multiplayer game that can help you figure it out!
-					</span>
-				</div>
-				<div class="secret_div">
-					<img class ="galImg1" src="src/cringy.png">
-				</div>
-					
-					
-			</div>
-
-			<script type="text/javascript">
-				let test = document.getElementsByClassName("projectItem");
-				console.log(test);
-				for (var i = 0; i < test.length; i++) {
-					test[i].addEventListener("mouseenter", function( event ) {
-					const numofproject= Number(event.target.id);
-					setTimeout(function() {
-    					event.target.style.color = "";
-  					}, 1000);
-
-        				document.getElementById("scroll-progress-bar").style.width = (numofproject/6)*100 + "%";
-			
-    					}, false);
-
-					test[i].addEventListener("mouseenter", function( event ) {
-					let gal= document.getElementsByClassName("p"+event.target.id+"gallery")
-					console.log(gal)
-					gal[0].style.display ="block";
+	<body>
+		<div class="sidebar">
+			<div class="section">
+				<div class="container">
+					<h1><span>ERIN<br>YAN</span></h1>
+	
 				
-					},false);
-					
-					test[i].addEventListener("mouseleave", function(event){
-						let gal= document.getElementsByClassName("p"+event.target.id+"gallery")
-						gal[0].style.display ="none";
-
-
-					},false)
-				}
-
-				const secretDiv = document.querySelector('.secret_div')
-
-				const keys = []
-				const secretCode = ['c','h','p']
-
-
-				function keysDetector(e) {
-				console.log(e.key)
-				keys.push(e.key)
-				if (keys.length > secretCode.length) {
-				keys.shift()
-				}
-				if (JSON.stringify(keys)=== JSON.stringify(secretCode)){
-				secretDiv.style.display= "block"
-				}
-				}
-				window.addEventListener('keyup', keysDetector);
-
-			</script>
+				</div>
+    				<div class="item" id ="about">About</div>
+    				<div class="item" id ="portfolio">Portfolio</div>
+    				<div class="item" id ="education">Education</div>
+    				<div class="item" id = "resume">Resume</div>
+ 			</div>
+		 	<div class="section">
+    				<a class="item icon" href="mailto:erinyan@andrew.cmu.edu"><i class="fas fa-envelope fa-lg"></i></a>
+		  		<a class="item icon" href= "https://www.linkedin.com/in/erin-yan-386412168/" ><i class="fab fa-linkedin fa-lg"></i></a>
+		  		<a class="item icon" href = https://github.com/glowyRectangle><i class="fab fa-github fa-lg"></i></a><div class="item"></div>
+  			</div>
 		</div>
-	  </main>
-  </body>
+		<div id="aboutme">
+			<h2>About Me</h2>
+
+			<div id="des">
+			<img id="abpic" src = "FullSizeRender.jpeg">
+			<div>
+			<h3>Nice to meet you!</h3>
+			<p>Hi I'm Erin a sophomore studying electrical and computer engineering at <br>
+				Carnegie Mellon University. Last summer I was an intern at Idaho National <br>
+				Laboratory researching about structural health monitoring of nuclear piping<br>
+				 systems. In my free time I enjoy running cross country and doing DIY crafts.<br>
+				  I always enjoy meeting new people so feel free to reach out at my socials.
+			</p>
+			<a class="item icon" href="mailto:erinyan@andrew.cmu.edu"><i class="fas fa-envelope fa-lg"></i></a>
+		  	<a class="item icon" href= "https://www.linkedin.com/in/erin-yan-386412168/" ><i class="fab fa-linkedin fa-lg"></i></a>
+		  	<a class="item icon" href = https://github.com/glowyRectangle><i class="fab fa-github fa-lg"></i></a>
+			  </div>
+			  </div>
+		</div>
+
+		<div id ="projects">
+			<h2>Projects</h2>
+			<p>Check put my projects below</p>
+		<ul>
+			<li class="content">
+				<div class="thumbnail">
+					<img  class="thumbnailimg" src="inlinternship.png" ><img>
+				</div>
+				<div class="title">Structural health monitoring in Nuclear Microreactors</div>
+				<h5 class="tag">Machine Learning</h5>
+				<h5 class="count">2021</h5>
+			</li>
+			<li class="content">
+				<div class="thumbnail">
+					<img  class="thumbnailimg" src="explorecsr.png" ><img>
+				</div>
+				<div class="title">Fairness in Optimal Transport</div>
+				<h5 class="tag">Computational CS</h5>
+				<h5 class="count">2021</h5>
+			</li>
+			<li class="content">
+				<div class="thumbnail">
+					<img  class="thumbnailimg" src="baboutus.png" ><img>
+				</div>
+				<div class="title">Berri.io</div>
+				<h5 class="tag">Front End Dev</h5>
+				<h5 class="count">2021</h5>
+			</li>
+			<li class="content clickable">
+				<div class="thumbnail">
+					<img  class="thumbnailimg" src="project.png" ><img>
+				</div>
+				<div class="title">3D Printer Filament Recycler</div>
+				<h5 class="tag">Hardware</h5>
+				<h5 class="count">2018</h5>
+			</li>
+			<li class="content">
+				<div class="thumbnail">
+					<img  class="thumbnailimg" src="splashScreen.jpg" ><img>
+				</div>
+				<div class="title">Hack112.io</div>
+				<h5 class="tag">Game Dev</h5>
+				<h5 class="count">2020</h5>
+			</li>
+			<li class="content">
+				<div class="thumbnail">
+					<img  class="thumbnailimg" src="bombss.png" ><img>
+				</div>
+				<div class="title">Spirit Bomb</div>
+				<h5 class="tag">Game Dev</h5>
+				<h5 class="count">2020</h5>
+			</li>
+			<li class="content clickable">
+				<div class="thumbnail">
+					<img  class="thumbnailimg" src="mlLab.png" ><img>
+				</div>
+				<div class="title">MNSIT Handwriting</div>
+				<h5 class="tag">Machine Learning</h5>
+				<h5 class="count">2020</h5>
+			</li>
+	</ul>
+	</div>
+	<div id ="educ">
+		<h2>Education</h2>
+		<h3>Carnegie Mellon University</h3>
+		<h4>Bachelors of Science Electrical and Computer Engineering</h4>
+		<ul id="classList">
+			<li>
+				18100: Fundamentals of Electrical and Computer Engineering
+			</li>
+			<li>
+				15112: Fundamentals of Programming and Computer Science
+			</li>
+			<li>
+				21127: Concepts of Mathematics
+			</li>
+			<li>
+				33141: Physics 1
+			</li>
+			<li>
+				21122: Integration and Approximation
+			</li>
+		</ul>
+	</div>
+	<div id="res">
+		<h2>Resume</h2>
+		<h3>Check out my resume below!</h3>
+		<embed src="ErinResume.pdf" width="800px" height="1100px" />
+	</div>
+		</div>
+		</body>
+<script src="script.js"></script>
 </html>
