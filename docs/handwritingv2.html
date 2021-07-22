@@ -2,6 +2,7 @@
 
 <head>
     <title>MNIST</title>
+    <link rel="stylesheet" href ="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
     <script type="text/javascript">
         // Variables for referencing the canvas and 2dcanvas context
@@ -222,16 +223,16 @@
         }
 
         .rightside {
-            float: left;
+            float:right;
             width: 500px;
             height: 125px;
             background-color: #def;
             padding: 10px;
             border-radius: 4px;
         }
-
+     
         .leftside {
-            float: left;
+            float:left;
             width: 150px;
             height: 200px;
             margin-left: 10px;
@@ -263,16 +264,48 @@
             background: #eee;
             border: 1px solid #888;
         }
+        h1{
+            height:50%
+        }
+        h2{
+            display:block;
+            float:none
+        }
+        p{
+            display:block;
+            float:none
+        }
     </style>
 </head>
 
 <body onload="init()">
+    <div class="sidebar animate__animated animate__slideInLeft animate__fast">
+			<div class="section">
+				<div class="container">
+					<h1><span>ERIN<br>YAN</span></h1>
+	
+				
+				</div>
+    				<a href="index.html"><div class="item" id ="about">About</div></a>
+    				<a href="projects.html"><div class="item" id ="portfolio">Portfolio</div></a>
+    				<a href="education.html"><div class="item" id ="education">Education</div></a>
+    				<a href ="resume.html"><div class= "item" id = "resume">Resume</div></a>
+ 			</div>
+		 	<div class="section">
+    				<a class="item icon" href="mailto:erinyan@andrew.cmu.edu"><i class="fas fa-envelope fa-lg"></i></a>
+		  		<a class="item icon" href= "https://www.linkedin.com/in/erin-yan-386412168/" ><i class="fab fa-linkedin fa-lg"></i></a>
+		  		<a class="item icon" href = https://github.com/yan-erin><i class="fab fa-github fa-lg"></i></a><div class="item"></div>
+  			</div>
+		</div>
+
     <div id="mnistapp">
         <h4 style="margin-left: 10px;">Draw a number in the left-hand box</h4>
+        <div class="box">
         <div class="leftside">
             <canvas id="sketchpad" height="140" width="140"></canvas>
             <input type="submit" value="Predict" id="predictbutton" onclick="predict();">
             <input type="submit" value="Clear" id="clearbutton" onclick="clearCanvas(canvas,ctx);">
+        </div>
         </div>
         <div id="rightside" class="rightside">
         </div>

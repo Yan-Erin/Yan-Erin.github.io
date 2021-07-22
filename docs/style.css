@@ -70,7 +70,9 @@ h1{
 	}
 
 h1 span{width:100%;position:relative}
-
+#mnistapp {
+  padding-left:20%
+}
 h1 span:before{
 	background:linear-gradient(45deg,#fc5c7d,#6a82fb,#fc5c7d);
 	width:100%;
