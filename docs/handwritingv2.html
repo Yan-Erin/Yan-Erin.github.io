@@ -183,8 +183,8 @@
 
             //convert to tensor 
             var tfImg = tf.browser.fromPixels(imageData, 1);
-            var smalImg = tf.image.resizeBilinear(tfImg, [28, 28,1]);
-            var tensor = smalImg.expandDims(0);
+            var smalImg = tf.image.resizeBilinear(tfImg, [28, 28]);
+            var tensor = smalImg.expandDims(1);
             tensor = tensor.div(tf.scalar(255));
             tensor=tf.squeeze(tensor,[3]);
             const prediction = model.predict(tensor);
