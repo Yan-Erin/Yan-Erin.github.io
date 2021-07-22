@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<title>Erin Yan Site!</title>
+	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<script src="https://kit.fontawesome.com/20331a6fb0.js" crossorigin="anonymous"></script>
+    	<link rel="icon" href="http://www.erinyan.dev/favicon.png">
+    	<link rel="stylesheet" href ="style.css">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+	<body>
+		<div class="sidebar">
+			<div class="section">
+				<div class="container">
+					<h1><span>ERIN<br>YAN</span></h1>
+	
+				
+				</div>
+    				<a href="index.html"><div class="item" id ="about">About</div></a>
+    				<a href="projects.html"><div class="item" id ="portfolio">Portfolio</div></a>
+    				<a href="education.html"><div class="item" id ="education">Education</div></a>
+    				<a href ="resume.html"><div class= "item" id = "resume">Resume</div></a>
+ 			</div>
+		 	<div class="section">
+    				<a class="item icon" href="mailto:erinyan@andrew.cmu.edu"><i class="fas fa-envelope fa-lg"></i></a>
+		  		<a class="item icon" href= "https://www.linkedin.com/in/erin-yan-386412168/" ><i class="fab fa-linkedin fa-lg"></i></a>
+		  		<a class="item icon" href = https://github.com/glowyRectangle><i class="fab fa-github fa-lg"></i></a><div class="item"></div>
+  			</div>
+		</div>
+		<div class="info"> 
+			<h2>Fairness  in the Optimal Transport for Resource Allocation</h2>
+			<h4>Built with: Dr.Juntao Chen, Jason Hughes, Hailey Bober, Maria Jara, Navpreet Kaur</h4>
+			<p>Optimal transport entails finding the most efficient way to allocate a limited amount of resources. However, the most efficient transport plan may not always lead to a fair allocation of resources. 
+			In this study, we introduced a framework that incorporates fairness in resource allocation through adding a fairness factor into the optimal transport plan </p>
+			<img class="projectimages" src="otgraph.png"> 
+			<p>In the left graph resources are equally distributed from source to target nodes. Though this is fair, this may not be efficent due to location and efficency of the target nodes. In
+			the right graph, the most optimal plan is shown. In this, a target nodes is not getting any resources and it may cause them to shut down which decreases social utility. Neither end
+			of the spectrum is the most ideal and we wanted to find a transport plan that can incorporte both efficency and fairness.
+			</p>
+			<img class="projectimages" src="otframework.png">
+			<p>In here you can see the fairness factor omega being implemented. The higher the omega the more fairness is weighted and the lower the omega value the more efficency is weighted. 
+				The fairness function is only applied on the target nodes because they are most affected by fairness.
+			</p>
+			<img class="projectimages" src="algo.png">
+			<p>In this algorithm, line 1 indicates that while the transport plan of the source and target do not converge do everything below. Then in line 2 and 3 the transport
+				plans of each source and target nodes are recalulated based on the previous iteration. Then the total transport plan with the fairness algorithm and the langarian multiplier is calculated
+				on each source and target node. 
+			</p>
+			<img class="projectimages" src="otgraphs.png">
+			<p>As you can see with the fairness factor incorportated(middlegraph), the social utility the OT function converges at is nearly 5 times higher than the one without it (leftmost graph). In one of 
+				the case studies we tried the algorithm on, the transport plan with fairness incorported has resources more distributed across the targets while the one without fairness has almost all resources at one target. </p>
+	
+		</div>
+	</body>
+</html>
