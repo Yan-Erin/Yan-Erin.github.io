@@ -1,33 +1,31 @@
-const targetDiv = document.getElementById("aboutme");
-
-document.getElementById("about").onclick = function () {
-	targetDiv.style.display = "block";
-	document.getElementById("projects").style.display="none";
-	document.getElementById("educ").style.display = "none";
-	document.getElementById("res").style.display = "none";
-};
-
-
-document.getElementById("portfolio").onclick = function () {
-	document.getElementById("projects").style.display = "block";
-	document.getElementById("aboutme").style.display="none";
-	document.getElementById("educ").style.display = "none";
-	document.getElementById("res").style.display = "none";
+const confettiSettings = { target: 'whee', size: 1.4, max: 300 }
+const confetti = new ConfettiGenerator(confettiSettings)
+console.log(document.getElementById("yesbutton"))
+console.log("hi")
+document.getElementById("yesbutton").onclick = function () {
+	console.log("hi")
+	confetti.render()
+    anime({
+      targets:'body',
+      duration: 2000,
+    })
 
 };
+const keys = []
+const secretDiv = document.querySelector('.secretDiv')
+const secretCode = ["E","\"","*","#","l","@","G"," ", "#","$","a"," ", "Y", "&", "Y", "N", "g", "o", "$", "p","@","p","m","h","@","e","d","p","e","p"]
 
-document.getElementById("education").onclick = function () {
-	document.getElementById("educ").style.display = "block";
-	document.getElementById("aboutme").style.display="none";
-	document.getElementById("projects").style.display="none";
-	document.getElementById("res").style.display = "none";
+function keysDetector(e) {
+  if (e.key!="Shift"){
+	console.log(e.key)
+  	keys.push(e.key)
+  }
+  if (keys.length > secretCode.length) {
+    keys.shift()
+  }
+  if (JSON.stringify(keys)=== JSON.stringify(secretCode)){
+    secretDiv.style.display= "block"
+  }
+}
+window.addEventListener('keyup', keysDetector);
 
-};
-
-document.getElementById("resume").onclick = function () {
-	document.getElementById("res").style.display = "block";
-	document.getElementById("aboutme").style.display="none";
-	document.getElementById("projects").style.display="none";
-	document.getElementById("educ").style.display = "none";
-
-};

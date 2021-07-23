@@ -45,8 +45,13 @@ text-align:center;
 	color:#7961ff;
 	background-color: #fff7ef;
 	cursor:pointer;
+}
 
-
+.secretDiv{
+  display:None;
+}
+#whee{
+  position: absolute;
 }
 p{
   line-height: 1.5rem;
@@ -132,6 +137,19 @@ ul {
 #classList{
 	list-style-type:circle;
 	display:block;
+}
+#yesbutton{
+  margin-bottom:1rem;
+  font-size:1.3rem;
+  padding:0.5rem;
+  border-radius: 0.5rem;
+  background:transparent;
+  border: 2px solid #6a82fb; /* Green */
+
+}
+#yesbutton:hover{
+  background: #6a82fb;
+  color: white;
 }
 .content {
   display: grid;
