@@ -1,16 +1,3 @@
-const confettiSettings = { target: 'whee', size: 1.4, max: 300 }
-const confetti = new ConfettiGenerator(confettiSettings)
-console.log(document.getElementById("yesbutton"))
-console.log("hi")
-document.getElementById("yesbutton").onclick = function () {
-	console.log("hi")
-	confetti.render()
-    anime({
-      targets:'body',
-      duration: 2000,
-    })
-
-};
 const keys = []
 const secretDiv = document.querySelector('.secretDiv')
 const secretCode = ["E","\"","*","#","l","@","G"," ", "#","$","a"," ", "Y", "&", "Y", "N", "g", "o", "$", "p","@","p","m","h","@","e","d","p","e","p"]
@@ -28,4 +15,18 @@ function keysDetector(e) {
   }
 }
 window.addEventListener('keyup', keysDetector);
+
+const confettiSettings = { target: 'whee', size: 1.4, max: 300 }
+const confetti = new ConfettiGenerator(confettiSettings)
+console.log(document.getElementById("yesbutton"))
+console.log("hi")
+document.getElementById("yesbutton").onclick = function () {
+	console.log("hi")
+	confetti.render()
+    anime({
+      targets:'body',
+      duration: 2000,
+    })
+
+};
 
