@@ -18,8 +18,7 @@ window.addEventListener('keyup', keysDetector);
 
 const confettiSettings = { target: 'whee', size: 1.4, max: 300 }
 const confetti = new ConfettiGenerator(confettiSettings)
-console.log(document.getElementById("yesbutton"))
-console.log("hi")
+
 document.getElementById("yesbutton").onclick = function () {
 	console.log("hi")
 	confetti.render()
