@@ -218,7 +218,10 @@ li:nth-child(3) {
 li:nth-child(4) {
   animation-delay: calc(4 * var(--delay));
 }
-
+.resprev{
+    height:160vh;
+    width:120vh;
+  }
 
 @keyframes enter {
   from {
@@ -248,6 +251,9 @@ li:nth-child(4) {
 .projectslist{
   margin-left:-2rem;
 }
+.resprev{
+    height:80vh
+  }
 }
 @media (max-width: 768px){
   .item{
@@ -256,7 +262,9 @@ li:nth-child(4) {
   .projectslist{
   margin-left:-2rem;
 }
-  
+  .resprev{
+    height:70vh
+  }
   h1{
     padding-top:0.5rem;
     font-size:1rem;
