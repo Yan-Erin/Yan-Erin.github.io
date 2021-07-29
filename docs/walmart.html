@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Walmart Innovation</title>
+		<meta charset="utf-8">
+    		<meta name="viewport" content="width=device-width, initial-scale=1">
+    		<script src="https://kit.fontawesome.com/20331a6fb0.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href ="stylewalmart.css">
+		<script src="https://cutt.ly/anime_js"></script>
+		<script src="confetti.js"></script>
+    		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	</head>
+
+	<body>
+		<section id="first" class="animate__animated animate__fadeIn animate__slower">
+		<img id = "logo" src="walmartimg/logo.png">
+		<h1 id="title" class="animate__animated animate__fadeIn animate__delay-1s">Preventing Theft: Walmart's next Innovation</h1>
+		<div id="semicircle" class="animate__animated animate__fadeIn animate__delay-2s">
+			<p id="learnmore">Scroll to learn more</p>
+		</div>
+		</section>
+
+		<section id= "background">
+			<div id="backgroundcontainer">
+				<h2>Theft detection using RFID with Scan & Go</h2>
+				<p id="text">Scan & Go is a convenient system for shoppers but also leads to added product loss of as much as 10 basis points for every 1% of sales <a href='https://www.researchgate.net/publication/330214157_SELF-CHECKOUT_IN_RETAIL_MEASURING_THE_LOSS' target="_blank">[1]</a>. 
+					That's why Walmart needs a new theft detection system to supplement Scan & Go.
+				</p>
+			</div>
+		</section>
+
+		<section id= "description">
+			<p id="destext">According to the National Retail Federation, shoppers with 50 items in their cart had a 60% chance of having at least one un-scanned item,
+				 while shoppers with 100 items had an 86% chance of error <a href='https://www.researchgate.net/publication/330214157_SELF-CHECKOUT_IN_RETAIL_MEASURING_THE_LOSS' target="_blank">[1]</a>. Before customers leave the store they just have to place their cart/bag on the
+				  RFID system and scan their phone on the machine. If there are any extra items 
+				the RFID detects, it will remind customers to scan the items. This will reduce theft and will also be fast, autonomous, and simple.
+			</p>
+			<img class="images" id="imgrfid" src="walmartimg/shopandgo.png">
+
+			
+		</section>
+		<canvas id="whee"></canvas>
+		<section id ="description2">
+			<div id="des2">
+			<img class="images" id="imgrfid" src="walmartimg/rfid2.png">
+			<p id= "destext">RFID uses radio waves to scan all objects in the cart at once <a href="https://news.panasonic.com/global/topics/2018/55288.html">[2]</a>. However if used as the only checkout method, it can be inaccurate. Thus I propose that
+				Walmart should use RFID in conjunction with Scan and Go to double check the shopper. Right before the shopper leaves they just place the cart on the RFID and quickly scan the 
+				machine. If there are extra items the RFID scans that is not scanned by the phone, the machine can remind the user to scan it. This may add just a few seconds to the 
+				shopper but save millions for Walmart. </p>
+			</div>
+			<h1>Convenient, fast, and theft-free</h1>
+			</section>
+			<section style="color:white"> 
+			<div id="quizform">
+			<h2 style="color:white">Quiz!</h2>
+			<form>
+				<ul>
+				<li>
+					<h3>Why should we use RFID in Walmart?</h3>
+					 <div>
+        					<input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+        					<label for="question-1-answers-A">A) It can be used to double check shoppers when used with Shop and Go</label>
+    					</div>
+    
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+						<label for="question-1-answers-B">B) It can help Walmart save millions of dollars by preventing theft</label>
+					</div>
+					
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+						<label for="question-1-answers-C">C) It takes the shopper less than a minute to use and is super easy!</label>
+					</div>
+					
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+						<label for="question-1-answers-D">D) All of the above</label>
+					</div>
+	
+				</li>
+				</ul>
+				
+				<input id='sub' type="submit" onclick="checkAnswer();return false" value="Submit"  />
+				<div id="resultscorrect">Correct! Thanks for participating</div>
+				<div id="resultsincorrect">Nope! Try again. There are more reasons than that!</div>
+			</form>
+			</div>
+			<script>
+				const confettiSettings = { target: 'whee', size: 1.5, max: 300 }
+				const confetti = new ConfettiGenerator(confettiSettings)
+
+				function checkAnswer(){
+					var answerA= document.getElementById("question-1-answers-A")
+					var answerB= document.getElementById("question-1-answers-B")
+					var answerC= document.getElementById("question-1-answers-C")
+					var answerD= document.getElementById("question-1-answers-D")
+					if (answerD.checked==true){
+						document.getElementById("resultscorrect").style.display="block";
+						document.getElementById("resultsincorrect").style.display="none";
+						confetti.render()
+    						anime({
+      							targets:'body',
+      							duration: 2000,
+    						})
+
+					}
+					else{
+						document.getElementById("resultsincorrect").style.display="block";
+						document.getElementById("resultscorrect").style.display="none";
+					}
+				}
+			</script>
+		</section>
+	</body>
+	<footer>
+		<span style="color:white; padding:1rem;">Made by <a href="index.html">Erin Yan</a></span>
+	</footer>
+</html>
