@@ -20,7 +20,7 @@ body{
 h1{
 	color:var(--yellow);
 	text-align:center;
-	font-size:2.2rem;
+	font-size:2.1rem;
 	font-family: "Encode Sans Expanded";
 }
 h2{
@@ -40,6 +40,9 @@ input{
 #title{
 	margin-top:-1rem;
 	margin-bottom:0.2rem;
+	position: fixed; 
+	left:50%;  
+	transform: translate(-50%, 0%)
 }
 #first{
 	position:relative;
@@ -174,12 +177,12 @@ a{
 	color:var(--darkblue)
 }
 
-@media (max-width: 1025px){
+@media (max-width: 1205px){
 	h1{
-		font-size:2rem;
+		font-size:1.8rem;
 	}
 h2{
-	font-size:1.8rem;
+	font-size:1.6rem;
 	text-align:center;
 }
 p{
@@ -195,6 +198,7 @@ input{
 #title{
 	margin-top:1.5rem;
 	margin-bottom:0.2rem;
+	position: absolute; 
 }
 #first{
 	position:relative;
@@ -207,8 +211,6 @@ input{
 }
 #semicircle{
 
-        height: 10vh;
-         width: 25vw;
 
 }
 .container{
@@ -242,7 +244,7 @@ input{
 }
 @media (max-width: 541px){
 	h1{
-		font-size:1.5rem;
+		font-size:1.3rem;
 	}
 h2{
 	font-size:1.2rem;
@@ -272,8 +274,8 @@ p{
 }
 #semicircle{
 
-        height: 12vh;
-         width: 35vw;
+        height: 6rem;
+         width: 10rem;
 
 }
 #learnmore{
@@ -312,7 +314,7 @@ li{
 
 @media (max-width: 376px){
 	h1{
-		font-size:1.3rem;
+		font-size:1.2rem;
 	}
 h2{
 	font-size:1.1rem;
