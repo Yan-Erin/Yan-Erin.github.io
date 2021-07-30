@@ -116,9 +116,10 @@ ul{
 	padding:2rem;
 	background-color: var(--blue);
 	color:white;
+	padding-bottom:0;
 }
 #des2{
-	display:flex
+	display:flex;
 }
 #imgrfid{
 	padding:1.5rem;
