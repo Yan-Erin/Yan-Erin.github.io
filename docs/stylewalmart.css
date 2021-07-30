@@ -49,6 +49,7 @@ input{
  	 background-position: center;
   	background-repeat: no-repeat;
  	 background-size: cover;
+	  z-index: -1;
 }
 
 #semicircle{
@@ -57,8 +58,8 @@ input{
          bottom:0;
          left: 50%;
          transform: translate(-50%, 0%);
-        height: 15vh;
-         width: 15vw;
+        height: 7rem;
+         width: 12rem;
          border-radius: 150px 150px 0 0;
         background-color: var(--darkblue);
 	padding:0;
@@ -87,8 +88,8 @@ ul{
 }
 #logo{
 	width:12vw;
-	padding:1rem;
-	padding-bottom:0;
+	padding:2rem;
+	padding-bottom:0.5rem;
 }
 #intro{
 	width:100%;
@@ -97,13 +98,19 @@ ul{
 #background{
 	background-color: white;
 	padding:1.5rem;
+
+	
 }
 #backgroundcontainer{
 	width:70%;
-	margin-left:10%
+	text-align:center;
+	margin-left:50%;
+	transform: translate(-50%, 0%);
+
+
 }
 #text{
-	margin-left:10%
+
 }
 
 #description{
@@ -111,29 +118,43 @@ ul{
 	background-color: var(--darkblue);
 	color:white;
 	display:flex;
+	padding-left:2rem;
+	padding-right:2rem;
+
 }
 #description2{
 	padding:2rem;
 	background-color: var(--blue);
 	color:white;
 	padding-bottom:0;
+	padding-left:2rem;
+	padding-right:2rem;
 }
 #des2{
 	display:flex;
 }
 #imgrfid{
-	padding:1.5rem;
-	width:60vw;
+	padding:2rem;
+
+	width:50%;
 	height:auto;
+
 }
 a{
 	color:#FFB81C
 }
 #destext{
-	width:35vw;
+	width:50%;
 	line-height: 2rem;
 	padding:1rem;
-	margin-top:1%
+
+
+	
+}
+.container{
+	max-width:85%;
+	margin:auto;
+	display:flex;
 }
 #quizform{
 	margin-right:auto;
@@ -190,6 +211,11 @@ input{
          width: 25vw;
 
 }
+.container{
+	max-width:95%;
+	margin:auto;
+	display:block;
+}
 #description{
 	display:block;
 }
@@ -206,7 +232,7 @@ input{
 }
 #backgroundcontainer{
 	width:90%;
-	margin-left:0%;
+
 	
 }
 #quizform{
@@ -278,6 +304,9 @@ li{
 	width:20vw;
 	padding:1rem;
 	padding-bottom:0;
+}
+#backgroundcontainer{
+	margin-left: 50%;
 }
 }
 
