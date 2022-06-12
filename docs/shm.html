@@ -1,51 +1,63 @@
 <!DOCTYPE html>
 <html>
-	<title>SHM</title>
-	<meta charset="utf-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1">
-    	<script src="https://kit.fontawesome.com/20331a6fb0.js" crossorigin="anonymous"></script>
-    	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-    	<link rel="stylesheet" href ="style.css">
-    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<title>SHM</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/20331a6fb0.js" crossorigin="anonymous"></script>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-	<body>
-		<div class="sidebar animate__animated animate__slideInLeft animate__fast">
-			<div class="section">
-				<div class="container">
-					<h1><span>ERIN<br>YAN</span></h1>
-	
-				
-				</div>
-    				<a href="index.html"><div class="item" id ="about">About</div></a>
-    				<a href="projects.html"><div class="item" id ="portfolio">Portfolio</div></a>
-    				<a href="education.html"><div class="item" id ="education">Education</div></a>
-    				<a href ="resume.html"><div class= "item" id = "resume">Resume</div></a>
- 			</div>
-		 	<div class="section">
-    				<a class="item icon" href="mailto:erinyan@andrew.cmu.edu"><i class="fas fa-envelope fa-lg"></i></a>
-		  		<a class="item icon" href= "https://www.linkedin.com/in/erin-yan-386412168/" ><i class="fab fa-linkedin fa-lg"></i></a>
-		  		<a class="item icon" href = https://github.com/yan-erin><i class="fab fa-github fa-lg"></i></a><div class="item"></div>
-  			</div>
-		</div>
-		<div class="info"> 
-			<h2>Structural Health Monitoring of Nuclear Power Plants</h2>
-			<h4>Built with: Dr.Piyush Sabharwall, Harleen Kaur Sandhu, Saran Srikanth Bodda, Dr. Abhinav Gupta, Dr. Xu Wu </h4>
-			<p>During my internship at the Idaho National Laboratory, I worked on using artifical neural networks to detect damage in a piping system. </p>
-			<img class="projectimages" src="digitaltwin.png">
-			<p>Digital twin technology allows for increased monitoring and autonomy in reactors such as microreactors. In this project, a finite element model of the simple piping system was created using ANSYS FE software. 
-				Seismic loads were applied to the model, and high-fidelity simulations were carried out to acquire sensor data from 9 locacations in the form of acceleration-time-series signals to capture the phenomenon of degradation in nuclear piping equipment systems.
-				The goal of this project was to detect where the pipe is degraded and its degradation level (minor, moderate, severe). 
-			</p>
-			<img class ="projectimages" src ="tstostft.png">
-			<p>Using the SciPy short-time Fourier transform (STFT) module, the time series data of each direction of each sensor was transformed into a three-dimensional (3D) array with frequency, time, and STFT magnitude as its axis. </p>
-			<img class="projectimages" src ="cnnstructure.png">
-			<p>Tensorflow and Keras was used to create a convolutional neural network with 3 convoluted layers and 2 dense layers for 2D image classification. The activation function used was reLu and the output activation function was softmax.</p>
-			<img class="projectimages" src="results.png">
-			<p>After fine tuning hyperparameters, the results show that our convolutional neural network was very good at detecting degradation with 9 sensors. 
-				Later when we tried running the model on a reduced number of sensors, the model still ran suprising well. This may mean that with 9 sensors the data is being overfitted. In the future k-fold validation will be implemented for the 9 sensor model. </p>
-		</div>
-	</body>
+<body class="projects_page">
+
+    <div class="container">
+        <div class="navbar">
+            <img class="nav_stick_guy" src="stick_guy.png"></img>
+            <a href="index.html">
+
+                <div class="projects nav_item" id="about">About</div>
+            </a>
+            <a href="projects.html">
+                <div class="projects nav_item" id="portfolio">Portfolio</div>
+            </a>
+            <a href="ErinResume.pdf">
+                <div class="projects nav_item" id="resume">Resume</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="info">
+        <h2>Structural Health Monitoring of Nuclear Power Plants</h2>
+        <h4>Built with: Dr.Piyush Sabharwall, Harleen Kaur Sandhu, Saran Srikanth Bodda, Dr. Abhinav Gupta, Dr. Xu Wu </h4>
+        <p>During my internship at the Idaho National Laboratory, I worked on using artifical neural networks to detect damage in a piping system. </p>
+        <img class="projectimages" src="digitaltwin.png">
+        <p>Digital twin technology allows for increased monitoring and autonomy in reactors such as microreactors. In this project, a finite element model of the simple piping system was created using ANSYS FE software. Seismic loads were applied to the
+            model, and high-fidelity simulations were carried out to acquire sensor data from 9 locacations in the form of acceleration-time-series signals to capture the phenomenon of degradation in nuclear piping equipment systems. The goal of this
+            project was to detect where the pipe is degraded and its degradation level (minor, moderate, severe).
+        </p>
+        <img class="projectimages" src="tstostft.png">
+        <p>Using the SciPy short-time Fourier transform (STFT) module, the time series data of each direction of each sensor was transformed into a three-dimensional (3D) array with frequency, time, and STFT magnitude as its axis. </p>
+        <img class="projectimages" src="cnnstructure.png">
+        <p>Tensorflow and Keras was used to create a convolutional neural network with 3 convoluted layers and 2 dense layers for 2D image classification. The activation function used was reLu and the output activation function was softmax.</p>
+        <img class="projectimages" src="results.png">
+        <p>After fine tuning hyperparameters, the results show that our convolutional neural network was very good at detecting degradation with 9 sensors. Later when we tried running the model on a reduced number of sensors, the model still ran suprising
+            well. This may mean that with 9 sensors the data is being overfitted. In the future k-fold validation will be implemented for the 9 sensor model. </p>
+    </div>
+    <div class="footer">
+        <div class="contact">
+            <p class="footer_name">erin yan</p>
+            <a class="projects-footer  item icon ab" href="mailto:erinyan@andrew.cmu.edu"><img src="mail_open.svg"></img>
+            </a>
+            <a class=" projects-footer item icon ab" href="https://www.linkedin.com/in/erin-yan-386412168/"><img src="Linkedin.svg"></img>
+            </a>
+            <a class="projects-footer  item icon ab" href="https://github.com/yan-erin"><img src="GitHub.svg"></img>
+            </a>
+        </div>
+
+    </div>
+</body>
+
 </html>
