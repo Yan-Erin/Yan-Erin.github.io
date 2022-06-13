@@ -55,21 +55,21 @@ body {
 }
 
 .intro_header {
-    font-size: 3rem;
+    font-size: 2.2rem;
     margin-top: 2%;
     color: var(--text_header);
     margin-left: 7%;
 }
 
 #about_me {
-    margin-top: 3rem;
+    margin-top: 2rem;
     display: flex;
     align-items: center;
 }
 
 .stick_guy {
-    width: 40rem;
-    height: 41rem;
+    width: 36rem;
+    height: 37rem;
     margin-left: 20rem;
 }
 
@@ -86,12 +86,12 @@ body {
 
 #des {
     margin-left: 15%;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-top: 10%;
 }
 
 #des_list {
-    line-height: 1.5;
+    line-height: 1.2;
     list-style-type: '-     ';
     width: 80%;
 }
