@@ -40,7 +40,7 @@ body {
 
 .nav_item {
     color: var(--text_header);
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-right: 5%;
     display: inline-block;
 }
@@ -62,7 +62,7 @@ body {
 }
 
 #about_me {
-    margin-top: 2rem;
+    margin-top: 1.9rem;
     display: flex;
     align-items: center;
 }
@@ -87,7 +87,7 @@ body {
 #des {
     margin-left: 15%;
     font-size: 1.2rem;
-    margin-top: 10%;
+    margin-top: 3%;
 }
 
 #des_list {
